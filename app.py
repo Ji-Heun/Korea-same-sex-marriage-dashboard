@@ -62,7 +62,7 @@ bar = (
     .mark_bar()
     .encode(
         x=alt.X("시나리오:N", title=None),
-        y=alt.Y("출생 총량:Q", title="절대 출생 총량 (정규화 b=1 기준)",
+        y=alt.Y("출생 총량:Q", title="출생 총량",
                 scale=alt.Scale(domain=[0, max(A_abs, B_abs) * 1.1])),
         color=alt.condition(
             alt.datum.시나리오 == "A (불허)",
