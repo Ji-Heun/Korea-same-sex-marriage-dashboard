@@ -118,5 +118,6 @@ st.caption(
 )
 
 # ---- 그래프 2: b값 변화 추세 ----
+st.markdown("---")
 st.markdown("### b값 변화에 따른 절대 출생 총량")
 st.altair_chart(line, use_container_width=True)
